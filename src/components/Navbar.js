@@ -1,0 +1,33 @@
+import React from 'react'
+import {Link} from 'react-router-dom'
+
+
+
+const Navbar = () => {
+
+    const ulStyles = {   
+        listStyleType: "none",
+        display: "flex",
+        justifyContent: "space-around"
+    }
+    const liStyles = {
+        textDecoration: "none"
+    }
+
+    return(
+        <div>
+            <ul style={ulStyles}>
+                <Link to="/" style={liStyles}><li>home</li></Link>
+                <Link to="/yellingGreeter" style={liStyles}><li>Yelling Greeter</li></Link>
+                <Link to="/happyMessage" style={liStyles}><li>Happy message</li></Link>
+                <Link to="/businessCard" style={liStyles}><li>Business Card</li></Link>
+                <Link to="/cookieClicker" style={liStyles}><li>Cookie Clicker</li></Link>
+            </ul>
+            
+            
+        </div>
+    )
+}
+
+
+export default Navbar
