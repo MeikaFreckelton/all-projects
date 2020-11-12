@@ -8,6 +8,40 @@
   margin: 3%;
 }
 
+#yellingGreeter {
+  text-align: center;
+}
+
+#yellingGreeter #message {
+  background-color: #ff7575;
+  width: 30vw;
+  margin: 2% auto;
+  padding: 3%;
+}
+
+#yellingGreeter input {
+  padding: 0.15% 5% 0.15% 0.5%;
+}
+
+#yellingGreeter .yellBtn {
+  border: 1px solid #ff0000;
+  border-radius: 3px;
+  background-color: rgba(255, 117, 117, 0.3);
+  padding: 0.18% 3%;
+  margin-left: 1%;
+}
+
+#happyMessage {
+  text-align: center;
+}
+
+#happyMessage #randomMessage {
+  background-color: lightgoldenrodyellow;
+  width: 30vw;
+  margin: 2% auto;
+  padding: 3%;
+}
+
 #businessCardWrapper {
   margin-left: 5em;
 }
@@ -61,7 +95,15 @@
 }
 
 #businessCardWrapper .cardAndForm .bForm label {
-  min-width: 8vw;
+  min-width: 10vw;
   margin-right: 3%;
+}
+
+#cookieClick {
+  margin: 0 auto;
+  width: 30vw;
+  padding: 3%;
+  text-align: center;
+  background-color: lightcyan;
 }
 /*# sourceMappingURL=businessCard.css.map */

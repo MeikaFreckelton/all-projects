@@ -7,11 +7,64 @@
     margin: 3%;
 }
 
+// .formStyle{
+
+// }
+
+// yelling greeter : --------------------------------------------------
+
+#yellingGreeter{
+
+    text-align: center;
+
+    #message{
+        background-color: #ff7575;
+        width: 30vw;
+        margin: 2% auto;
+        padding: 3%; 
+    }
+    input{
+        padding: 0.15% 5% 0.15% 0.5%; 
+    }
+
+    .yellBtn{
+        border: 1px solid #ff0000;
+        border-radius: 3px;
+        background-color: rgba(255, 117, 117, 0.3);
+        padding: 0.18% 3%;
+        margin-left: 1%;
+    }
+}
 
 
-// business card : 
 
 
+
+
+// happy message : --------------------------------------------------
+
+#happyMessage{
+    text-align: center;
+
+
+    #randomMessage{
+        background-color: lightgoldenrodyellow;
+        width: 30vw;
+        margin: 2% auto;
+        padding: 3%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+// business card : --------------------------------------------------
 
 #businessCardWrapper{
     margin-left: 5em;
@@ -46,6 +99,10 @@
         }
     }
 
+    .colorPicker{
+        
+    }
+
     .cardAndForm{
         display: flex;
         flex-direction: row;
@@ -58,7 +115,7 @@
             width: 60vw;
 
             label{
-                min-width: 8vw;
+                min-width: 10vw;
                 margin-right: 3%;
             }
             
@@ -72,6 +129,18 @@
 
 
     
+}
+
+
+// cookie clicker :
+
+#cookieClick{
+    margin: 0 auto;
+    width: 30vw;
+    padding: 3%;
+    text-align: center;
+    background-color: lightcyan;
+
 }
 
 

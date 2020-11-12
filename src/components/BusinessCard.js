@@ -4,11 +4,11 @@ import './../styles/businessCard.css'
 
 
 const BusinessCard = () => {
-    const [name, setName] = useState("Meika Freckelton")
-    const [title, setTitle] = useState("Junior Developer")
-    const [phone, setPhone] = useState("0452634523")
-    const [email, setEmail] = useState("meikafreckelton@gmail.com")
-    const [address, setAddress] = useState("204 Derby Street, Penrith 2750 NSW")
+    const [name, setName] = useState("John Smith")
+    const [title, setTitle] = useState("Developer")
+    const [phone, setPhone] = useState("1234567890")
+    const [email, setEmail] = useState("johnsmith@gmail.com")
+    const [address, setAddress] = useState("Sydney")
     const [hex, setHex] = useState("lightBlue")
     const [fontHex, setFontHex] = useState("black")
 
@@ -74,7 +74,7 @@ const BusinessCard = () => {
     return (
         <div id="businessCardWrapper">
             <div className="heading">
-                <h1>Business card maker</h1>
+                <h1>Business card generator</h1>
             </div>
 
             <div className="cardAndForm">
@@ -92,13 +92,21 @@ const BusinessCard = () => {
 
                 <div className="bForm">
                 <form className="businessForm">
-                    <div style={divStyles}>
+                    <div style={divStyles} className="colorPicker">
+                        <label>
+                            Background Colour
+                        </label>
                         <input 
                         type="color"
                         value={hex}
                         onChange={changeHandler}
                         name="hex"
                         />
+                    </div>
+                    <div style={divStyles} className="colorPicker">
+                        <label>
+                            Font Color
+                        </label>
                         <input 
                         type="color"
                         value={fontHex}

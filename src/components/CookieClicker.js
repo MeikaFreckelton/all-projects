@@ -59,14 +59,18 @@ const CookieClicker = () => {
             <div className="heading">
                 <h1>Cookie Clicker</h1>
             </div>
-            
-            <h2>{count}</h2>
-            <h3>increment count: {increment}</h3>
-            <h3>decrement count: {decrement}</h3>
+            <div id="cookieClick">
+                <h2>{count}</h2>
+                <h3>increment count: {increment}</h3>
+                <h3>decrement count: {decrement}</h3>
 
-            <button onClick={handlePlusClick}>+</button>
-            <button onClick={handleMinusClick}>-</button>
-            <button style={hiddenStyle} onClick={handleIncreasedClick}>{autoMessage}</button>
+                <button onClick={handlePlusClick}>+</button>
+                <button onClick={handleMinusClick}>-</button>
+                <button style={hiddenStyle} onClick={handleIncreasedClick}>{autoMessage}</button>
+
+            </div>
+            
+            
 
 
         </div>

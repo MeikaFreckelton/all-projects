@@ -20,21 +20,31 @@ const YellingGreeter = (props) => {
             <div className="heading">
                 <h1>Enter a message below and have it yelled back at you </h1>
             </div>
-            
-            <form onSubmit={handleSubmit}>
-                <input 
-                type="text"
-                name="message"
-                placeholder="enter message here..."
-                onChange={handleChange}
-                />
-                <input 
-                type="submit"
-                value="yell"
-                />
-            </form>
+
+            <div id="yellingGreeter">
+                <form onSubmit={handleSubmit}>
+                    <input 
+                    type="text"
+                    name="message"
+                    placeholder="enter message here..."
+                    onChange={handleChange}
+                    />
+                    <input 
+                    type="submit"
+                    value="yell"
+                    className="yellBtn"
+                    />
+                </form>
+
+                <div id="message">
+                    <h1>{message}</h1>
+                </div>
                 
-            <h1>{message}</h1>
+            </div>
+            
+            
+                
+            
         </div>
     
     )

@@ -24,11 +24,18 @@ const HappyMessage = () => {
     return (
         <div>
             <div className="heading">
-                <h1>happy message</h1>
+                <h1>Click to receive a random happy message</h1>
             </div>
             
-            <button onClick={printMessage} >Get a happy message</button>
-            <h1>{random}</h1>
+            
+            <div id="happyMessage">
+                <button onClick={printMessage} >Get a happy message</button>
+                <div id="randomMessage">
+                    <h2>{random}</h2>
+                </div>
+                
+            </div>
+            
         </div>
     )
 }
