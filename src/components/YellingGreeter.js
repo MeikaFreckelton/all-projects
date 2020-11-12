@@ -17,7 +17,10 @@ const YellingGreeter = (props) => {
 
     return (
         <div>
-            <h1>Enter a message below and have it yelled back at you </h1>
+            <div className="heading">
+                <h1>Enter a message below and have it yelled back at you </h1>
+            </div>
+            
             <form onSubmit={handleSubmit}>
                 <input 
                 type="text"

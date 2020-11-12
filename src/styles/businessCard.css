@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+* {
+  font-family: Nunito;
+}
+
+.heading {
+  text-align: center;
+  margin: 3%;
+}
+
+#businessCardWrapper {
+  margin-left: 5em;
+}
+
+#businessCardWrapper #businessCard #name {
+  font-size: 1.75em;
+  margin: 0.35em 0.6em 0;
+  font-weight: 800;
+}
+
+#businessCardWrapper #businessCard #title {
+  margin: 0 0.9em;
+  font-size: 1.25em;
+  font-style: italic;
+  font-weight: 700;
+  border-bottom: 2px solid;
+  padding-bottom: 3%;
+}
+
+#businessCardWrapper #businessCard #phone {
+  margin: 0.7em 1em 0.3em;
+  font-size: 1em;
+}
+
+#businessCardWrapper #businessCard #email {
+  margin: 0.5em 1em;
+  font-size: 1em;
+}
+
+#businessCardWrapper #businessCard #address {
+  margin: 0.5em 1em;
+  font-size: 1em;
+}
+
+#businessCardWrapper .cardAndForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#businessCardWrapper .cardAndForm .bCard {
+  margin-right: 5%;
+}
+
+#businessCardWrapper .cardAndForm .bForm {
+  width: 60vw;
+}
+
+#businessCardWrapper .cardAndForm .bForm label {
+  min-width: 8vw;
+  margin-right: 3%;
+}
+/*# sourceMappingURL=businessCard.css.map */

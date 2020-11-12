@@ -56,7 +56,10 @@ const CookieClicker = () => {
     
     return (
         <div>
-            <h1>Cookie Clicker</h1>
+            <div className="heading">
+                <h1>Cookie Clicker</h1>
+            </div>
+            
             <h2>{count}</h2>
             <h3>increment count: {increment}</h3>
             <h3>decrement count: {decrement}</h3>

@@ -6,6 +6,8 @@ import Navbar from './components/Navbar'
 import HappyMessage from './components/HappyMessage'
 import BusinessCard from './components/BusinessCard'
 import Home from './components/Home'
+import Tweeter from './components/Tweeter/Tweeter'
+import './styles/businessCard.css'
 
 
 
@@ -17,6 +19,7 @@ const App = () => {
       <Navbar />
       
       {/* <YellingGreeter /> */}
+        <Route exact path="/tweeter" component={Tweeter} />
         <Route path="/cookieClicker" component={CookieClicker} />
         <Route path="/yellingGreeter" component={YellingGreeter} />
         <Route path="/happyMessage" component={HappyMessage} />

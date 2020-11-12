@@ -23,7 +23,10 @@ const HappyMessage = () => {
 
     return (
         <div>
-            <h1>happy message</h1>
+            <div className="heading">
+                <h1>happy message</h1>
+            </div>
+            
             <button onClick={printMessage} >Get a happy message</button>
             <h1>{random}</h1>
         </div>
