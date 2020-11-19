@@ -15,7 +15,7 @@ const CookieClicker = () => {
   }
 
   const [store, dispatch] = useReducer(stateReducer, initialState)
-  const { cookieClicks, autoIncrease } = store
+//   const { cookieClicks, autoIncrease } = store
 
   
 
