@@ -29,6 +29,9 @@ const Navbar = () => {
                 <Link to="/businessCard" style={liStyles}><li>Business Card</li></Link>
                 <Link to="/cookieClicker" style={liStyles}><li>Cookie Clicker</li></Link>
                 <Link to="/tweeter" style={liStyles}><li>Tweeter</li></Link>
+                <Link to="/todolist" style={liStyles}><li>To Do List</li></Link>
+                <Link to="/billAndTip" style={liStyles}><li>Bill and Tip</li></Link>
+                <Link to="/MovieList" style={liStyles} ><li>Movie List</li></Link>
             </ul>
             
             

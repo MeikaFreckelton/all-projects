@@ -29,7 +29,7 @@ const HappyMessage = () => {
             
             
             <div id="happyMessage">
-                <button onClick={printMessage} >Get a happy message</button>
+                <button onClick={printMessage} id="happyBtn" >Get a happy message</button>
                 <div id="randomMessage">
                     <h2>{random}</h2>
                 </div>

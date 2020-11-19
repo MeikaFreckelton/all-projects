@@ -48,10 +48,17 @@
 
 
     #randomMessage{
-        background-color: lightgoldenrodyellow;
+        background-color: #FAFAD3;
         width: 30vw;
         margin: 2% auto;
         padding: 3%;
+    }
+    #happyBtn{
+        border: 1px solid #ffff00;
+        background-color: rgba(250, 250, 211, 0.25);
+        border-radius: 3px;
+        padding: 0.18% 3%;
+
     }
 }
 
@@ -141,6 +148,17 @@
     text-align: center;
     background-color: lightcyan;
 
+}
+
+
+// tweeter :
+
+#newPostForm{
+    margin: 0 auto;
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 

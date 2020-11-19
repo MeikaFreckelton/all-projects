@@ -7,11 +7,13 @@ import React, {useState} from 'react'
 const AddTwoot = ({history, nextId, addTwoot}) => {
     const divStyles = {
         display: "grid",
-        width: "100vw"
+        width: "40vw",
+        
     }
     const inputStyles = {
-        width: "70vw",
+        width: "40vw",
         margin: ".5em"
+
     }
     const labelStyles = {
         fontSize: "1.2em"
@@ -19,7 +21,7 @@ const AddTwoot = ({history, nextId, addTwoot}) => {
     const textAreaStyles = {
         height: "200px",
         margin: ".5em",
-        width: "70vw"
+        width: "40vw"
     }
 
     const initialFormState = {
@@ -49,7 +51,7 @@ const AddTwoot = ({history, nextId, addTwoot}) => {
         }
         // console.log(newTwoot)
         addTwoot(newTwoot)
-        history.push(`/twoot/${nextId}`)
+        history.push(`/tweeter/twoot/${nextId}`)
         // console.log(newTwoot)
     }
     console.log(formState)
@@ -59,8 +61,11 @@ const AddTwoot = ({history, nextId, addTwoot}) => {
 
     return (
         <div id="newPostForm">
-            <h1>add twoot</h1>
-            <form onSubmit={handleSubmit}>
+            <div className="heading">
+                <h1>add twoot</h1>
+            </div>
+            
+            <form onSubmit={handleSubmit} id="newTwootForm">
                 <div style={divStyles} >
                     <label style={labelStyles}>Title</label>
                     <input
