@@ -48,7 +48,7 @@ const PerSecond = () => {
 
             <h2>Increase Cookies Per Second</h2>
             <h3>{error}</h3>
-            <button onClick={handleClick}>Spend 100 cookies to increase cookies per second by {autoIncrease}</button>
+            <button className="cookieBtns" onClick={handleClick}>Spend 100 cookies to increase cookies per second by {autoIncrease}</button>
         </div>
     )
 }

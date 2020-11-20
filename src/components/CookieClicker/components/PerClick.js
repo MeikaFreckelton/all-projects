@@ -16,7 +16,7 @@ const PerClick = () => {
     return(
         <div>
             <h2>Manually Increase Cookie Count</h2>
-            <button onClick={handleClick}>increase by 5</button>
+            <button className="cookieBtns" onClick={handleClick}>increase by 5</button>
         </div>
     )
 }

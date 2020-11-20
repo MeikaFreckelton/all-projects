@@ -19,18 +19,22 @@ const CookieClicker = () => {
 
   
 
-  const divStyle = {
-    textAlign: "center"
-  }
 
   return (
-    <div style={divStyle}>
-      <StateContext.Provider value={{store, dispatch}}>
-        <h1>Cookie Clicker</h1>
-        <DisplayCount />
-        <PerClick />
-        <PerSecond />
-      </StateContext.Provider>
+    <div>
+      
+        <StateContext.Provider value={{store, dispatch}}>
+          <div className="heading">
+            <h1>Cookie Clicker</h1>
+          </div>
+          
+          <div id="cookieClick">
+            <DisplayCount />
+            <PerClick />
+            <PerSecond />
+          </div>
+        </StateContext.Provider>
+      
     </div>
   )
 }

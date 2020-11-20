@@ -28,12 +28,12 @@ const ToDoList = () => {
 
     }
 
-    function Todo({todo, index, completeTodo, removeTodo}){ // get text from list item
+    function Todo({todo, index, completeTodo, removeTodo, number}){ // get text from list item
         return(
             <div className="todo" style={{textDecoration: todo.isCompleted ? "line-through" : ""}}>
-                {todo.text} 
+                {number}. {todo.text}
                 <div className="buttons">
-                <button onClick={() => removeTodo(index)}>✖️</button><button onClick={() => completeTodo(index)}>✔️</button><button>edit</button>
+                    <button onClick={() => removeTodo(index)}>x</button><button onClick={() => completeTodo(index)}>done</button><button>edit</button>
                 </div>
                 
             </div>
@@ -77,7 +77,7 @@ const ToDoList = () => {
                     placeholder="New to-do..."
                     onChange={e => setValue(e.target.value)}
                 />
-                <input type="submit" value="add" />
+                <input type="submit" value="add" className="add-btn"/>
                 </form>
             </div>
 
@@ -86,6 +86,7 @@ const ToDoList = () => {
                     <Todo
                         key={index}
                         index={index}
+                        number={index + 1}
                         todo={todo}
                         completeTodo = {completeTodo}
                         removeTodo = {removeTodo}

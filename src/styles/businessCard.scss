@@ -1,11 +1,15 @@
+$feature: #006aff;
+
+
 *{
-    font-family: Nunito
+    font-family: Raleway;
 }
 
 .heading{
     text-align: center;
-    margin: 3%;
+    margin: 3% 0 2%;
 }
+
 
 
 
@@ -66,13 +70,12 @@
 
 
 
-
-
-
 // business card : --------------------------------------------------
 
 #businessCardWrapper{
     margin-left: 5em;
+    display: flex;
+
 
     #businessCard{
     
@@ -109,13 +112,16 @@
     .cardAndForm{
         display: flex;
         flex-direction: row;
+        background-color: aliceblue;
+        padding: 3%;
+        margin: 0 auto;
         
         .bCard{
-            margin-right: 5%;
+            margin-right: 12%;
         }
 
         .bForm{
-            width: 60vw;
+            width: 25vw;
 
             label{
                 min-width: 10vw;
@@ -140,9 +146,26 @@
 #cookieClick{
     margin: 0 auto;
     width: 30vw;
-    padding: 3%;
+    padding: 2% 2% 3%;
     text-align: center;
-    background-color: lightcyan;
+    background-color: aliceblue;
+
+    .count{
+        color: $feature;
+    }
+
+    .cookieBtns{
+        color: $feature;
+        
+        border: 2px solid $feature;
+        border-radius: 3px;
+        padding: 2% 5%;
+        cursor: pointer;
+
+    }
+    button{
+        background-color: #fff;
+    }
 
 }
 
@@ -155,6 +178,37 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+
+// bill and tip :
+
+.billWrapper{
+    width: 30vw;
+    margin: 0 auto;
+    text-align: center;
+
+    .btn{
+        color: $feature;
+        border: 2px solid $feature;
+        border-radius: 3px;
+        padding: 1% 5%;
+        cursor: pointer;
+        background-color: #fff;
+    }
+
+    .bill-heading{
+        margin: 10%;
+    }
+
+    .total{
+        color: $feature;
+    }
+
+    form{
+        background-color: aliceblue;
+        padding: 3%;
+        text-align: center;
+    }
 }
 
 

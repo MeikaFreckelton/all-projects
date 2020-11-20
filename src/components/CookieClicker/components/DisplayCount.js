@@ -8,7 +8,7 @@ const DisplayCount = () => {
     return(
         <div>
             <h2>Current Cookie Count</h2>
-            <h2>{cookieClicks}</h2>
+            <h2 className="count">{cookieClicks}</h2>
         </div>
     )
 }

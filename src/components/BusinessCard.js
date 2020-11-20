@@ -72,111 +72,116 @@ const BusinessCard = () => {
 
 
     return (
-        <div id="businessCardWrapper">
+        <div>
+
+        
+        
             <div className="heading">
                 <h1>Business card generator</h1>
             </div>
+            <div id="businessCardWrapper">
 
-            <div className="cardAndForm">
-            <div className="bCard">
-                <div id="businessCard" style={bgColor}>
-                    <p id="name">{name}</p>
-                    <p id="title">{title}</p>
-                    <p id="phone">{phone}</p>
-                    <p id="email">{email}</p>
-                    <p id="address">{address}</p>
-
-                </div>
-
-                </div>
-
-                <div className="bForm">
-                <form className="businessForm">
-                    <div style={divStyles} className="colorPicker">
-                        <label>
-                            Background Colour
-                        </label>
-                        <input 
-                        type="color"
-                        value={hex}
-                        onChange={changeHandler}
-                        name="hex"
-                        />
-                    </div>
-                    <div style={divStyles} className="colorPicker">
-                        <label>
-                            Font Color
-                        </label>
-                        <input 
-                        type="color"
-                        value={fontHex}
-                        onChange={changeHandler}
-                        name="fontHex"
-                        />
+                <div className="cardAndForm">
+                <div className="bCard">
+                    <div id="businessCard" style={bgColor}>
+                        <p id="name">{name}</p>
+                        <p id="title">{title}</p>
+                        <p id="phone">{phone}</p>
+                        <p id="email">{email}</p>
+                        <p id="address">{address}</p>
 
                     </div>
-                    
-                    
-                    <div style={divStyles} className="form-">
-                        <label>
-                            Full Name
-                        </label>
-                        <input
-                            type="text"
-                            name="name"
-                            onChange={handleChange}
-                            placeholder="name here..."
-                        />
+
                     </div>
-                    <div style={divStyles} className="form-">
-                        <label>Title</label>
-                        <input
-                            type="text"
-                            name="title"
-                            onChange={handleChange}
-                            placeholder="title here..."
-                        />
-                    </div>
-                    <div style={divStyles} className="form-">
-                        <label>Phone Number</label>
-                        <input
-                            type="text"
-                            name="phone"
-                            onChange={handleChange}
-                            placeholder="phone number here..."
-                        />
-                    </div>
-                    <div style={divStyles} className="form-">
-                        <label>Email</label>
+
+                    <div className="bForm">
+                    <form className="businessForm">
+                        <div style={divStyles} className="colorPicker">
+                            <label>
+                                Background Colour
+                            </label>
+                            <input 
+                            type="color"
+                            value={hex}
+                            onChange={changeHandler}
+                            name="hex"
+                            />
+                        </div>
+                        <div style={divStyles} className="colorPicker">
+                            <label>
+                                Font Color
+                            </label>
+                            <input 
+                            type="color"
+                            value={fontHex}
+                            onChange={changeHandler}
+                            name="fontHex"
+                            />
+
+                        </div>
+                        
+                        
+                        <div style={divStyles} className="form-">
+                            <label>
+                                Full Name
+                            </label>
                             <input
                                 type="text"
-                                name="email"
+                                name="name"
                                 onChange={handleChange}
-                                placeholder="email here..."
-                        />
+                                placeholder="name here..."
+                            />
+                        </div>
+                        <div style={divStyles} className="form-">
+                            <label>Title</label>
+                            <input
+                                type="text"
+                                name="title"
+                                onChange={handleChange}
+                                placeholder="title here..."
+                            />
+                        </div>
+                        <div style={divStyles} className="form-">
+                            <label>Phone Number</label>
+                            <input
+                                type="text"
+                                name="phone"
+                                onChange={handleChange}
+                                placeholder="phone number here..."
+                            />
+                        </div>
+                        <div style={divStyles} className="form-">
+                            <label>Email</label>
+                                <input
+                                    type="text"
+                                    name="email"
+                                    onChange={handleChange}
+                                    placeholder="email here..."
+                            />
+                        </div>
+                        <div style={divStyles} className="form-">
+                            <label>Address</label>
+                            <input
+                                type="text"
+                                name="address"
+                                onChange={handleChange}
+                                placeholder="address here..."
+                            />
+                        </div>
+                    </form>
+                    <button onClick={saveAsPng}>save as png</button>
                     </div>
-                    <div style={divStyles} className="form-">
-                        <label>Address</label>
-                        <input
-                            type="text"
-                            name="address"
-                            onChange={handleChange}
-                            placeholder="address here..."
-                        />
-                    </div>
-                </form>
-                <button onClick={saveAsPng}>save as png</button>
+
+
                 </div>
 
+            
 
+            
+            
+
+            
             </div>
-
-            
-
-            
-            
-
-            
         </div>
     )
 }

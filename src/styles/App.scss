@@ -9,6 +9,8 @@
     margin: 0 auto;
     font-family: Montserrat;
     padding: 3%;
+
+    
 }
 
 .todo{
@@ -16,11 +18,15 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    .index{
+        font-weight: 600;
+
+    }
 }
 
 .todoItems{
     width: 30vw;
-    background-color: lightblue;
+    background-color: aliceblue;
     padding: 3%;
     margin: 3% auto;
 }
@@ -28,7 +34,23 @@
 #formDiv{
     margin: 0 auto;
     display: flex;
+    
     justify-content: center;
+    width: 70vw;
+
+    form{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .add-btn{
+        margin-left: 3%;
+        color: #006aff;
+        padding: 1% 8%;
+        background-color: #fff;
+        border: 1px solid #006aff;
+        border-radius: 3px;
+    }
 }
 
 
@@ -42,4 +64,21 @@
         color: blue;
     }
     
+}
+
+
+
+.buttons{
+    margin-bottom: 3%;
+    // background-color: aqua;
+    width: 10vw;
+
+    button{
+        margin-left: 5%;
+        color: #006aff;
+        padding: 1% 5%;
+        background-color: #fff;
+        border: 1px solid #006aff;
+        border-radius: 3px;
+    }
 }

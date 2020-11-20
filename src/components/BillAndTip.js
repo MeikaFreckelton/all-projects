@@ -26,26 +26,33 @@ const BillAndTip = () => {
 
   return(
     <div>
-      <h1>bill and tip</h1>
-      <h3>Total: {result}</h3>
+      <div className="billWrapper">
+        <div className="heading bill-heading">
+          <h1>Bill and Tip Calculator</h1>
+        </div>
+        
+        <h3 className="total">Total: ${result}</h3>
 
-      <form onSubmit={handleSubmit}>
+
+        <form onSubmit={handleSubmit}>
           <label>Bill Amount: </label><br/>
           $<input 
-          type="number" 
-          name="billValue"
-          onChange={handleInputChange}
+            type="number" 
+            name="billValue"
+            onChange={handleInputChange}
           ></input><br/><br/>
 
           <label>Tip percentage:</label><br/>
           <input 
-          type="number"
-          name="percentageValue"
-          onChange={handleInputChange}
+            type="number"
+            name="percentageValue"
+            onChange={handleInputChange}
           ></input>%<br/><br/>
 
-          <input type="submit"></input>
+          <input className="btn" type="submit"></input>
         </form>
+      </div>
+      
     </div>
   )
 }
