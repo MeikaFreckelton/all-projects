@@ -11,7 +11,8 @@ const Navbar = () => {
         justifyContent: "space-around"
     }
     const liStyles = {
-        textDecoration: "none"
+        textDecoration: "none",
+        color: "#006aff"
     }
 
     return(
