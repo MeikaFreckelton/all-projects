@@ -17,6 +17,7 @@ import './styles/businessCard.css'
 
 const App = () => {
   return (
+    
     <div >
       <BrowserRouter>
       <Navbar />
