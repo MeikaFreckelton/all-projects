@@ -169,7 +169,7 @@ const BusinessCard = () => {
                             />
                         </div>
                     </form>
-                    <button onClick={saveAsPng}>save as png</button>
+                    <button className="business-btn" onClick={saveAsPng}>save as a png</button>
                     </div>
 
 

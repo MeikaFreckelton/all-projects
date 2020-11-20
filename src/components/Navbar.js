@@ -8,12 +8,12 @@ const Navbar = () => {
     const ulStyles = {   
         listStyleType: "none",
         display: "flex",
-        justifyContent: "space-around"
+        justifyContent: "space-around",
+        paddingInlineStart: "0",
+        borderBottom: "1px solid #006aff",
+        paddingBottom: "1%"
     }
-    const liStyles = {
-        textDecoration: "none",
-        color: "#006aff"
-    }
+
 
     return(
         <div>
@@ -24,15 +24,15 @@ const Navbar = () => {
 
 
             <ul style={ulStyles}>
-                <Link to="/" style={liStyles}><li>home</li></Link>
-                <Link to="/yellingGreeter" style={liStyles}><li>Yelling Greeter</li></Link>
-                <Link to="/happyMessage" style={liStyles}><li>Happy message</li></Link>
-                <Link to="/businessCard" style={liStyles}><li>Business Card</li></Link>
-                <Link to="/cookieClicker" style={liStyles}><li>Cookie Clicker</li></Link>
-                <Link to="/tweeter" style={liStyles}><li>Tweeter</li></Link>
-                <Link to="/todolist" style={liStyles}><li>To Do List</li></Link>
-                <Link to="/billAndTip" style={liStyles}><li>Bill and Tip</li></Link>
-                <Link to="/MovieList" style={liStyles} ><li>Movie List</li></Link>
+                <Link to="/" className="liStyles"><li>Home</li></Link>
+                <Link to="/yellingGreeter" className="liStyles"><li>Yelling Greeter</li></Link>
+                <Link to="/happyMessage" className="liStyles"><li>Happy message</li></Link>
+                <Link to="/businessCard" className="liStyles"><li>Business Card</li></Link>
+                <Link to="/cookieClicker" className="liStyles"><li>Cookie Clicker</li></Link>
+                <Link to="/tweeter" className="liStyles"><li>Tweeter</li></Link>
+                <Link to="/todolist" className="liStyles"><li>To Do List</li></Link>
+                <Link to="/billAndTip" className="liStyles"><li>Bill and Tip</li></Link>
+                <Link to="/MovieList" className="liStyles" ><li>Movie List</li></Link>
             </ul>
             
             

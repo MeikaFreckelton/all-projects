@@ -27,25 +27,37 @@ const MovieList = () => {
 
     return(
         <div>
-            <h1>movie list</h1>
-            <p>{
-                movieList.map(m => {
-                return <li>{m}</li>
-                })
-                }</p>
+            <div id="movie-wrapper">
 
 
-            <form onSubmit={handleSubmit} >
-                <input
-                type="text"
-                name="movie"
-                value={value}
-                onChange={handleChange}
-                placeholder="add new movie..." 
-                />
-                <input type="submit" value="add" />
+                <div className="heading">
+                    <h1>Movie List</h1>
+                </div>
 
-            </form>
+                <div id="movie-list">
+                    <ol>{
+                        movieList.map((m) => {
+                        return <li>{m}</li>
+                        })
+                        }</ol>
+
+
+                    <form onSubmit={handleSubmit} >
+                        <input
+                        type="text"
+                        name="movie"
+                        value={value}
+                        onChange={handleChange}
+                        placeholder="add new movie..." 
+                        />
+                        <input type="submit" value="add" />
+
+                    </form>
+
+                </div>
+                
+                
+            </div>
 
         </div>
     )
